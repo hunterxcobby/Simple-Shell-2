@@ -45,11 +45,11 @@ int custom_string_compare(const char *first_str, const char *second_str)
 	}
 
 	if (*first_str == *second_str)
-		return 0;
+		return (0);
 	else if (*first_str > *second_str)
-		return 1;
+		return (1);
 	else
-		return -1;
+		return (-1);
 }
 
 
@@ -74,7 +74,7 @@ char *custom_string_copy(char *destination, char *source)
 
 	destination[index] = '\0';
 
-	return destination;
+	return (destination);
 }
 
 
@@ -97,7 +97,7 @@ char *custom_string_duplicate(const char *str)
 	for (i = 0; i <= length; i++)
 		new_string[i] = str[i];
 
-	return new_string;
+	return (new_string);
 }
 
 
@@ -114,5 +114,5 @@ size_t custom_string_length(const char *str)
 	while (str[length] != '\0')
 		length++;
 
-	return length;
+	return (length);
 }
